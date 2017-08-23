@@ -34,11 +34,12 @@ var config = {
 		},
 		{
 			module: "currentweather",
+			header: "Today\' weather",
 			position: "top_right",
 			config: {
 				// See 'Configuration options' for more information.
-				location: "Amsterdam,Netherlands",
-				locationID: "1816670", //Location ID from http://openweathermap.org/help/city_list.txt
+				location: "China,Xi\'an",
+				locationID: "1790630", //Location ID from http://openweathermap.org/help/city_list.txt
 				appid: "abcde12345abcde12345abcde12345ab" //openweathermap.org API key.
 			}
 		},
