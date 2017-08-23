@@ -33,13 +33,23 @@ var config = {
 			position: "top_left"
 		},
 		{
+			module: "currentweather",
+			position: "top_right",
+			config: {
+				// See 'Configuration options' for more information.
+				location: "Amsterdam,Netherlands",
+				locationID: "", //Location ID from http://openweathermap.org/help/city_list.txt
+				appid: "abcde12345abcde12345abcde12345ab" //openweathermap.org API key.
+			}
+		},
+		{
 			module: "calendar",
 			header: "US Holidays",
 			position: "top_left",
 			config: {
 				calendars: [
 					{
-						symbol: "calendar-check-o ",
+						symbol: "calendar-check-o",
 						url: "webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics"
 					}
 				]
