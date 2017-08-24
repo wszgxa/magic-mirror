@@ -33,60 +33,31 @@ var config = {
 			position: "top_left"
 		},
 		{
-			module: "currentweather",
-			header: "Today\' weather",
-			position: "top_right",
-			config: {
-				// See 'Configuration options' for more information.
-				location: "China,Xi\'an",
-				locationID: "1790630", //Location ID from http://openweathermap.org/help/city_list.txt
-				appid: "abcde12345abcde12345abcde12345ab" //openweathermap.org API key.
-			}
-		},
-		{
 			module: "calendar",
-			header: "US Holidays",
+			header: "CHINA Holidays",
 			position: "top_left",
 			config: {
 				calendars: [
 					{
 						symbol: "calendar-check-o",
-						url: "webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics"
+						url: "http://7xlcyv.com1.z0.glb.clouddn.com/China_Holidays.ics"
 					}
 				]
 			}
 		},
 		{
 			module: "compliments",
-			position: "lower_third"
+			position: "bottom_center"
 		},
 		{
-			module: "currentweather",
-			position: "top_right",
-			config: {
-				location: "New York",
-				locationID: "",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "YOUR_OPENWEATHER_API_KEY"
-			}
+			module: "MMM-MirrorMirrorOnTheWall",
+			position: "middle_center",
+			config: {}
 		},
-		{
-			module: "weatherforecast",
-			position: "top_right",
-			header: "Weather Forecast",
-			config: {
-				location: "New York",
-				locationID: "5128581",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "YOUR_OPENWEATHER_API_KEY"
-			}
-		},
-{
-    module: 'MMM-MirrorMirrorOnTheWall',
-    position: "middle_center",
-    config: {}
-},
 		{
 			module: "newsfeed",
-			position: "bottom_bar",
+			position: "top_right",
+			header: "Hot News",
 			config: {
 				feeds: [
 					{
@@ -97,7 +68,16 @@ var config = {
 				showSourceTitle: true,
 				showPublishDate: true
 			}
-		},
+		}, {
+			module: "currentweather",
+			position: "top_right",	// This can be any of the regions.
+			config: {
+				// See 'Configuration options' for more information.
+				location: "Amsterdam,Netherlands",
+				locationID: "1790630", //Location ID from http://openweathermap.org/help/city_list.txt
+				appid: "abcde12345abcde12345abcde12345ab" //openweathermap.org API key.
+			}
+		}
 	]
 
 };
