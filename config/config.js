@@ -61,10 +61,15 @@ var config = {
 			config: {
 				feeds: [
 					{
+						title: "InfoQ",
+						url: "http://www.infoq.com/cn/feed"
+					},
+					{
 						title: "36Kr",
 						url: "http://36kr.com/feed"
 					}
 				],
+				wrapTitle: true,
 				showSourceTitle: true,
 				showPublishDate: true
 			}
