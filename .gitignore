@@ -51,6 +51,15 @@ Temporary Items
 .directory
 .Trash-*
 
+# Various Magic Mirror ignoramuses and anti-ignoramuses.
+
+# Don't ignore the node_helper core module.
+!/modules/node_helper
+!/modules/node_helper/**
+
+# Ignore all modules except the default modules.
+!/modules/**
+
 # Ignore changes to the custom css files.
 /css/custom.css
 

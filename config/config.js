@@ -57,12 +57,12 @@ var config = {
 		{
 			module: "newsfeed",
 			position: "top_right",
-			header: "Hot News",
+			header: "Hot technology News",
 			config: {
 				feeds: [
 					{
-						title: "New York Times",
-						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+						title: "36Kr",
+						url: "http://36kr.com/feed"
 					}
 				],
 				showSourceTitle: true,
