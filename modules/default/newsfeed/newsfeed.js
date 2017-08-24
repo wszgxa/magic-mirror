@@ -41,7 +41,9 @@ Module.register("newsfeed",{
 	getScripts: function() {
 		return ["moment.js"];
 	},
-
+	getStyles: function() {
+    return ["newsfeed.css"]
+  },
 	// Define required translations.
 	getTranslations: function() {
 		// The translations for the default modules are defined in the core translation files.
@@ -87,7 +89,7 @@ Module.register("newsfeed",{
 			wrapper.innerHTML = "The configuration options for the newsfeed module have changed.<br>Please check the documentation.";
 			return wrapper;
 		}
-
+		wrapper.className = "feeds"
 		if (this.activeItem >= this.newsItems.length) {
 			this.activeItem = 0;
 		}
