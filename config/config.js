@@ -79,6 +79,11 @@ var config = {
 				appid: "YOUR_OPENWEATHER_API_KEY"
 			}
 		},
+{
+    module: 'MMM-MirrorMirrorOnTheWall',
+    position: "middle_center",
+    config: {}
+},
 		{
 			module: "newsfeed",
 			position: "bottom_bar",
