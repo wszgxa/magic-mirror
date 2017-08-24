@@ -47,7 +47,24 @@ var config = {
 		},
 		{
 			module: "compliments",
-			position: "bottom_center"
+			position: "bottom_center",
+			config: {
+				compliments: {
+					anytime: [
+						"Hey there sexy!",
+						"Hey ThoughtWorkers!",
+						"Hello, beauty!",
+						"You look sexy!",
+						"Looking good today!",
+						"Hi, sexy!"
+					],
+					morning: [
+						"Good morning, handsome!",
+						"Enjoy your day!",
+						"How was your sleep?"
+					]
+				}
+			}
 		},
 		{
 			module: "MMM-MirrorMirrorOnTheWall",
