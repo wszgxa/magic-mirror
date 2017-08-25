@@ -20,7 +20,8 @@ var config = {
 	timeFormat: 24,
 	units: "metric",
 
-	modules: [{
+	modules: [
+		{
 			module: "alert",
 		},
 		{
