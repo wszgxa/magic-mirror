@@ -99,7 +99,7 @@ Module.register("newsfeed",{
 			// this.config.showFullArticle is a run-time configuration, triggered by optional notifications
 			if (!this.config.showFullArticle && (this.config.showSourceTitle || this.config.showPublishDate)) {
 				var sourceAndTimestamp = document.createElement("div");
-				sourceAndTimestamp.className = "light small dimmed";
+				sourceAndTimestamp.className = "small dimmed";
 
 				if (this.config.showSourceTitle && this.newsItems[this.activeItem].sourceTitle !== "") {
 					sourceAndTimestamp.innerHTML = this.newsItems[this.activeItem].sourceTitle;
